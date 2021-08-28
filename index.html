@@ -3,15 +3,25 @@
 <header>
     <title>Kokebok</title>
     <meta charset="utf-8" />
+    <link rel=stylesheet href=tailwind.min.css />
 </header>
 
-<body>
-    <h1>Kokebok</h1>
-    <ul>
-        <li><a href=/kikertgryte.png>Kikertgryte</a></li>
-        <li><a href=/chili-con-carne.jpg>Chili con carne</a></li>
-        <li>Vårløk, kjøttdeig, curry, vanlig kokosmelk, ris</li>
-    </ul>
+<body class="font-sans">
+    <div class="italic text-xl text-center m-8">Kokebok</div>
+    <div class="rounded-t-xl overflow-hidden bg-gradient-to-r from-indigo-50 to-indigo-100 p-10">
+        <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+            <a class="shadow-lg bg-white h-48 w-48 flex items-center justify-center rounded-md text-center"
+                href=/kikertgryte.png>Kikertgryte</a>
+            <a class="shadow-lg bg-white h-48 w-48 flex items-center justify-center rounded-md text-center"
+                href=/chili-con-carne.jpg>Chili
+                con
+                carne</a>
+            <div class="shadow-lg bg-white  h-48 w-48 flex items-center justify-center rounded-md text-center">Vårløk,
+                kjøttdeig,
+                curry, vanlig
+                kokosmelk, ris</div>
+        </div>
+    </div>
 </body>
 
 </html>
